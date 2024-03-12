@@ -1,0 +1,62 @@
+footer {
+  background-color: #f1eadc;
+}
+
+.pf-100 {
+  padding: 100px 0;
+}
+
+.policy-item:not(:first-child) {
+  margin-top: 6px;
+}
+
+.policy-item:first-child {
+  margin-top: 40px;
+}
+
+.products {
+  max-width: 70px;
+}
+
+.products li {
+  margin-top: 10px;
+}
+
+.woomail {
+  margin-top: 9px;
+  margin-bottom: 30px;
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.socials__link {
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
+.socials__link-inst {
+  background-image: url(../../img/instagram.png);
+  background-repeat: no-repeat;
+}
+
+.socials__link-fb {
+  background-image: url(../../img/facebook.png);
+  background-repeat: no-repeat;
+}
+
+.socials__link-twit {
+  background-image: url(../../img/twitter.png);
+  background-repeat: no-repeat;
+}
+
+.socials__link:not(:last-child) {
+  margin-right: 12px;
+}
+
+.cards {
+  width: 68px;
+  height: 22px;
+}

@@ -1,0 +1,21 @@
+/*   Importances section styles  */
+
+.importances-item {
+  max-width: 305px;
+}
+
+.importances-item-title {
+  margin-top: 37px;
+  margin-bottom: 24px;
+}
+
+.importances-item-img {
+  width: 69px;
+  height: 69px;
+}
+
+.importances-item-text {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
