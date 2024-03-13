@@ -1,8 +1,8 @@
 /*.main-menu, */
 .menuWrapper {
-  padding: 10px;
+  padding: 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -41,17 +41,8 @@
   margin: 0;
 }
 
-.products li:first-child {
-  margin: 40px 0 10px 0;
-}
-
-.products li:not(:first-child) {
-  margin-top: 10px;
-}
-
 .mainMenuItem,
 .rightMenuItem {
-  font-size: 15px;
   color: #000;
   text-decoration: none;
   border: 1px solid transparent;
@@ -109,13 +100,4 @@
   background-image: url(../../img/basket1.png);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.phone-num {
-  margin-right: 74px;
-  margin-left: 16px;
-}
-
-.right-menu_item {
-  margin: 0;
 }

@@ -1,16 +1,17 @@
-footer {
+.footer {
   background-color: #f1eadc;
-}
-
-.pf-100 {
   padding: 100px 0;
 }
 
-.policy-item:not(:first-child) {
+.pf100 {
+  padding: 100px 0;
+}
+
+.policyItem:not(:first-child) {
   margin-top: 6px;
 }
 
-.policy-item:first-child {
+.policyItem:first-child {
   margin-top: 40px;
 }
 
@@ -22,38 +23,55 @@ footer {
   margin-top: 10px;
 }
 
+.products li:first-child {
+  margin: 40px 0 10px 0;
+}
+
+.products li:not(:first-child) {
+  margin-top: 10px;
+}
+
 .woomail {
   margin-top: 9px;
   margin-bottom: 30px;
+}
+
+.socialsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: black;
+  /* d-flex mt-5 flex-column text-center mt-md-0 text-md-end align-items-center align-items-md-end */
 }
 
 .socials {
   margin-bottom: 20px;
 }
 
-.socials__link {
+.socialsLink {
   width: 23px;
   height: 23px;
   display: block;
 }
 
-.socials__link-inst {
+.socialsLink:not(:last-child) {
+  margin-right: 12px;
+}
+
+.socialsInst {
   background-image: url(../../img/instagram.png);
   background-repeat: no-repeat;
 }
 
-.socials__link-fb {
+.socialsFb {
   background-image: url(../../img/facebook.png);
   background-repeat: no-repeat;
 }
 
-.socials__link-twit {
+.socialsTwit {
   background-image: url(../../img/twitter.png);
   background-repeat: no-repeat;
-}
-
-.socials__link:not(:last-child) {
-  margin-right: 12px;
 }
 
 .cards {
