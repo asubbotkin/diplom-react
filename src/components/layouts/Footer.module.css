@@ -7,6 +7,12 @@
   padding: 100px 0;
 }
 
+.footerContentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .policyItem:not(:first-child) {
   margin-top: 6px;
 }
@@ -60,6 +66,9 @@
 }
 
 .socialsInst {
+  width: 23px;
+  height: 23px;
+  display: block;
   background-image: url(../../img/instagram.png);
   background-repeat: no-repeat;
 }
