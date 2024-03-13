@@ -1,9 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import classNames from 'classnames';
 import logo from '../../img/logo.png';
+import cards from '../../img/cards.png';
 import styles from './Footer.module.css';
-import menuStyles from './Menu.module.css';
 
 function Footer() {
   return (
@@ -24,48 +25,72 @@ function Footer() {
               </ul>
             </Col>
             <Col sm={4} md={5} lg={3} xl={4}>
-              <nav className={menuStyles.mainMenu}>
-                <NavLink className={menuStyles.mainMenuItem} to="." end>
-                  Главная
-                </NavLink>
-                <NavLink className={menuStyles.mainMenuItem} to="shop">
-                  Магазин
-                </NavLink>
-                <NavLink className={menuStyles.mainMenuItem} to="about">
-                  О бренде
-                </NavLink>
-                <NavLink className={menuStyles.mainMenuItem} to="contacts">
-                  Контакты
-                </NavLink>
+              <nav>
+                <ul className={styles.footerMenu}>
+                  <li className={styles.footerMenuItem}>
+                    <NavLink className={styles.footerMenuLink} to="." end>
+                      Главная
+                    </NavLink>
+                  </li>
+                  <li className={styles.footerMenuItem}>
+                    <NavLink className={styles.footerMenuLink} to="shop">
+                      Магазин
+                    </NavLink>
+                  </li>
+                  <li className={styles.footerMenuItem}>
+                    <NavLink className={styles.footerMenuLink} to="about">
+                      О бренде
+                    </NavLink>
+                  </li>
+                  <li className={styles.footerMenuItem}>
+                    <NavLink className={styles.footerMenuLink} to="contacts">
+                      Контакты
+                    </NavLink>
+                  </li>
+                </ul>
               </nav>
             </Col>
             <Col>
               <div className={styles.socialsWrapper}>
-                <Link className="rightMenuItem" href="tel:+74958235412">
+                <Link className={styles.rightMenuItem} href="tel:+74958235412">
                   +7 (495) 823-54-12
                 </Link>
-                <Link href="#" className="rightMenuItem woomail">
+                <Link
+                  href="#"
+                  className={classNames(styles.rightMenuItem, styles.woomail)}>
                   hello@womazing.com
                 </Link>
-                <div className="socials d-inline-flex">
+                <div className={styles.socials}>
                   <Link
-                    className="socials socialsLink socialsInst"
+                    className={classNames(
+                      styles.socials,
+                      styles.socialsLink,
+                      styles.socialsInst
+                    )}
                     href="https://www.instagram.com"
                     rel="nofollow noopener noreferrer"
                     target="_blank"></Link>
                   <Link
-                    className="socials socialsLink socialsFb"
+                    className={classNames(
+                      styles.socials,
+                      styles.socialsLink,
+                      styles.socialsFb
+                    )}
                     href="https://www.facebook.com"
                     rel="nofollow noopener noreferrer"
                     target="_blank"></Link>
                   <Link
-                    className="socials socialsLink socialsTwit"
+                    className={classNames(
+                      styles.socials,
+                      styles.socialsLink,
+                      styles.socialsTwit
+                    )}
                     href="https://www.twitter.com"
                     rel="nofollow noopener noreferrer"
                     target="_blank"></Link>
                 </div>
-                <div className="cadrds">
-                  <img src="../../img/cards.png" alt="" />
+                <div className={styles.cards}>
+                  <img src={cards} alt="" />
                 </div>
               </div>
             </Col>
