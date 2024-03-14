@@ -103,6 +103,10 @@
   margin-right: 12px;
 }
 
+.socialsImg {
+  display: none;
+}
+
 .socialsInst {
   background-image: url(../../img/instagram.png);
   background-repeat: no-repeat;

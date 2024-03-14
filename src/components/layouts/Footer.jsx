@@ -36,6 +36,20 @@ function Footer() {
                     <NavLink className={styles.footerMenuLink} to="shop">
                       Магазин
                     </NavLink>
+                    <ul className={styles.products}>
+                      <li>
+                        <a href="/">Пальто</a>
+                      </li>
+                      <li>
+                        <a href="/">Свитшоты</a>
+                      </li>
+                      <li>
+                        <a href="/">Кардиганы</a>
+                      </li>
+                      <li>
+                        <a href="/">Толстовки</a>
+                      </li>
+                    </ul>
                   </li>
                   <li className={styles.footerMenuItem}>
                     <NavLink className={styles.footerMenuLink} to="about">
@@ -52,25 +66,27 @@ function Footer() {
             </Col>
             <Col>
               <div className={styles.socialsWrapper}>
-                <Link className={styles.rightMenuItem} href="tel:+74958235412">
+                <a className={styles.rightMenuItem} href="tel:+74958235412">
                   +7 (495) 823-54-12
-                </Link>
+                </a>
                 <Link
                   href="#"
                   className={classNames(styles.rightMenuItem, styles.woomail)}>
                   hello@womazing.com
                 </Link>
                 <div className={styles.socials}>
-                  <Link
+                  <a
+                    href="https://www.instagram.com"
                     className={classNames(
                       styles.socials,
                       styles.socialsLink,
                       styles.socialsInst
                     )}
-                    href="https://www.instagram.com"
                     rel="nofollow noopener noreferrer"
-                    target="_blank"></Link>
-                  <Link
+                    target="_blank">
+                    <img className={styles.socialsImg} alt="Instagramm"></img>
+                  </a>
+                  <a
                     className={classNames(
                       styles.socials,
                       styles.socialsLink,
@@ -78,8 +94,10 @@ function Footer() {
                     )}
                     href="https://www.facebook.com"
                     rel="nofollow noopener noreferrer"
-                    target="_blank"></Link>
-                  <Link
+                    target="_blank">
+                    <img className={styles.socialsImg} alt="Facebook"></img>
+                  </a>
+                  <a
                     className={classNames(
                       styles.socials,
                       styles.socialsLink,
@@ -87,7 +105,9 @@ function Footer() {
                     )}
                     href="https://www.twitter.com"
                     rel="nofollow noopener noreferrer"
-                    target="_blank"></Link>
+                    target="_blank">
+                    <img className={styles.socialsImg} alt="Twitter"></img>
+                  </a>
                 </div>
                 <div className={styles.cards}>
                   <img src={cards} alt="" />
