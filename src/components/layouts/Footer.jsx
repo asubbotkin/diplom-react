@@ -1,9 +1,15 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {
+  RiInstagramLine,
+  RiFacebookBoxLine,
+  RiTwitterLine,
+  RiVisaFill,
+  RiMastercardFill,
+} from 'react-icons/ri';
 import classNames from 'classnames';
 import logo from '../../img/logo.png';
-import cards from '../../img/cards.png';
 import styles from './Footer.module.css';
 
 function Footer() {
@@ -64,53 +70,47 @@ function Footer() {
                 </ul>
               </nav>
             </Col>
-            <Col>
+            <Col sm={12} md={4} lg={2}>
               <div className={styles.socialsWrapper}>
-                <a className={styles.rightMenuItem} href="tel:+74958235412">
+                <a
+                  className={styles.rightMenuItem}
+                  href="tel:+74958235412"
+                  rel="nofollow noopener noreferrer">
                   +7 (495) 823-54-12
                 </a>
-                <Link
-                  href="#"
-                  className={classNames(styles.rightMenuItem, styles.woomail)}>
+                <a
+                  href="/"
+                  className={classNames(styles.rightMenuItem, styles.woomail)}
+                  rel="nofollow noopener noreferrer">
                   hello@womazing.com
-                </Link>
+                </a>
                 <div className={styles.socials}>
                   <a
                     href="https://www.instagram.com"
-                    className={classNames(
-                      styles.socials,
-                      styles.socialsLink,
-                      styles.socialsInst
-                    )}
+                    className={styles.socialsLink}
                     rel="nofollow noopener noreferrer"
                     target="_blank">
-                    <img className={styles.socialsImg} alt="Instagramm"></img>
+                    <RiInstagramLine className={styles.socialsIcon} />
                   </a>
                   <a
-                    className={classNames(
-                      styles.socials,
-                      styles.socialsLink,
-                      styles.socialsFb
-                    )}
+                    className={styles.socialsLink}
                     href="https://www.facebook.com"
                     rel="nofollow noopener noreferrer"
                     target="_blank">
-                    <img className={styles.socialsImg} alt="Facebook"></img>
+                    <RiFacebookBoxLine className={styles.socialsIcon} />
                   </a>
                   <a
-                    className={classNames(
-                      styles.socials,
-                      styles.socialsLink,
-                      styles.socialsTwit
-                    )}
+                    className={styles.socialsLink}
                     href="https://www.twitter.com"
                     rel="nofollow noopener noreferrer"
                     target="_blank">
-                    <img className={styles.socialsImg} alt="Twitter"></img>
+                    <RiTwitterLine className={styles.socialsIcon} />
                   </a>
                 </div>
-                <div className={styles.cards}>
-                  <img src={cards} alt="" />
+                <div>
+                  <RiVisaFill className={styles.card} />
+                  <RiMastercardFill className={styles.card} />
+                  {/* <img src={cards} alt="" /> */}
                 </div>
               </div>
             </Col>
