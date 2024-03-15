@@ -1,26 +1,15 @@
-/*.main-menu, */
-.menuWrapper {
-  padding: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.head__menu {
-  position: relative;
-}
-
 /*     Mobile menu    */
 
 .hamburger {
-  display: none;
   width: 32px;
   height: 24px;
   position: relative;
 }
 
-.hamburger img {
-  display: block;
+/*.main-menu, */
+
+.head__menu {
+  position: relative;
 }
 
 .rightMenu {
@@ -30,15 +19,8 @@
   text-decoration: none;
 }
 
-.rightMenu li {
-  display: block;
-}
-.mainMenuItem:not(last-child) {
+.mainMenu li:not(:last-child) {
   margin-right: 41px;
-}
-
-.mainMenuItem:last-child {
-  margin: 0;
 }
 
 .mainMenuItem,
@@ -100,4 +82,11 @@
   background-image: url(../../img/basket1.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 1199px) {
+  .rightMenuItem {
+    margin-right: 20px;
+    margin-left: 0px;
+  }
 }

@@ -1,57 +1,70 @@
 import { Link, NavLink } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import classNames from 'classnames';
+import hamburger from '../../img/menu_32px.png';
 import logo from '../../img/logo.png';
 import styles from './Menu.module.css';
 
 function Menu() {
   return (
     <div className="container">
-      <Row>
-        <div className={styles.menuWrapper}>
-          <Col sm={4} lg={2}>
-            <div>
-              <NavLink to="." end>
-                <img src={logo} alt="Logo" />
-              </NavLink>
+      <Row className="d-flex align-items-center justify-content-center py-5">
+        {/* <div className={styles.menuWrapper}> */}
+        <Col className="col-4 col-lg-2">
+          <div>
+            <NavLink to="." end>
+              <img src={logo} alt="Logo" />
+            </NavLink>
+          </div>
+        </Col>
+        <Col className="col-lg-6 d-flex order-1 order-lg-0 offset-lg-1 col-xl-5">
+          <nav className={styles.mainMenu}>
+            <ul className="d-none flex-column d-lg-flex flex-lg-row">
+              <li>
+                <NavLink className={styles.mainMenuItem} to="." end>
+                  Главная
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className={styles.mainMenuItem} to="shop">
+                  Магазин
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className={styles.mainMenuItem} to="about">
+                  О бренде
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className={styles.mainMenuItem} to="contacts">
+                  Контакты
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+          <div className="d-block d-lg-none">
+            <div className={styles.hamburger}>
+              <img src={hamburger} alt="" />
             </div>
-          </Col>
-          <Col sm={4} md={5} lg={3} xl={4}>
-            <nav className={styles.mainMenu}>
-              <NavLink className={styles.mainMenuItem} to="." end>
-                Главная
-              </NavLink>
-              <NavLink className={styles.mainMenuItem} to="shop">
-                Магазин
-              </NavLink>
-              <NavLink className={styles.mainMenuItem} to="about">
-                О бренде
-              </NavLink>
-              <NavLink className={styles.mainMenuItem} to="contacts">
-                Контакты
-              </NavLink>
-            </nav>
-          </Col>
-          <Col sm={4} md={5} lg={3} xl={4}>
-            <div>
-              <ul className={styles.rightMenu}>
-                <li>
-                  <Link className={styles.call}></Link>
-                </li>
-                <li>
-                  <Link className={styles.rightMenuItem}>
-                    +7 (495) 823-54-12
-                  </Link>
-                </li>
-                <li>
-                  <NavLink
-                    className={styles.shoppingChart}
-                    to="chart"></NavLink>
-                </li>
-              </ul>
-            </div>
-          </Col>
-        </div>
+          </div>
+        </Col>
+        <Col className="d-flex col-4 col-md-5 justify-content-md-between col-lg-3 justify-content-lg-end col-xl-4">
+          <div>
+            <ul className={styles.rightMenu}>
+              <li>
+                <Link className={styles.call}></Link>
+              </li>
+              <li className="d-none d-md-block">
+                <Link className={styles.rightMenuItem}>+7 (495) 823-54-12</Link>
+              </li>
+              <li>
+                <NavLink className={styles.shoppingChart} to="chart"></NavLink>
+              </li>
+            </ul>
+          </div>
+        </Col>
+        {/* </div> */}
       </Row>
     </div>
   );
