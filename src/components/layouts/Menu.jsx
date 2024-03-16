@@ -18,7 +18,7 @@ function Menu() {
             </NavLink>
           </div>
         </Col>
-        <Col className="col-lg-6 d-flex order-1 order-lg-0 offset-lg-1 col-xl-5">
+        <Col className="col-lg-6 justify-content-center d-flex order-1 order-lg-0 offset-lg-1 col-xl-5">
           <nav className={styles.mainMenu}>
             <ul className="d-none flex-column d-lg-flex flex-lg-row">
               <li>
@@ -43,13 +43,13 @@ function Menu() {
               </li>
             </ul>
           </nav>
-          <div className="d-block d-lg-none">
-            <div className={styles.hamburger}>
-              <img src={hamburger} alt="" />
-            </div>
-          </div>
+          <ul className="d-block text-end d-lg-none">
+            <li>
+              <img className={styles.hamburger} src={hamburger} alt="" />
+            </li>
+          </ul>
         </Col>
-        <Col className="d-flex col-4 col-md-5 justify-content-md-between col-lg-3 justify-content-lg-end col-xl-4">
+        <Col className="d-flex col-4 justify-content-center col-md-5 justify-content-lg-between col-lg-3 justify-content-lg-end col-xl-4">
           <div>
             <ul className={styles.rightMenu}>
               <li>
@@ -58,7 +58,7 @@ function Menu() {
               <li className="d-none d-md-block">
                 <Link className={styles.rightMenuItem}>+7 (495) 823-54-12</Link>
               </li>
-              <li>
+              <li className="ms-4 ms-md-0">
                 <NavLink className={styles.shoppingChart} to="chart"></NavLink>
               </li>
             </ul>

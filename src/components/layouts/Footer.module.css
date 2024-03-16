@@ -11,27 +11,13 @@
   color: #6e9c9f;
 }
 
-.policyItem:not(:first-child) {
+.policyItem {
   margin-top: 6px;
 }
-
-.policyItem:first-child {
-  margin-top: 40px;
-}
-
-/* .footerMenu {
-  display: flex;
-  flex-direction: row;
-  color: #000;
-} */
 
 .footerMenuItem:not(:last-child) {
   margin-right: 41px;
 }
-
-/* .footerMenuItem:last-child {
-  margin: 0;
-} */
 
 .products {
   max-width: 70px;
@@ -62,19 +48,11 @@
 
 .woomail {
   margin-top: 9px;
-  margin-bottom: 30px;
-}
-
-.socialsWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  color: black;
 }
 
 .socials {
-  display: inline-flex;
+  display: flex;
+
   margin-bottom: 20px;
 }
 
@@ -84,30 +62,13 @@
   display: block;
 }
 
-/* .socialsIcon:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
-} */
-
 .socialsLink:not(:last-child) {
   margin-right: 12px;
 }
 
-/* .socialsInst {
-  background-image: url(../../img/instagram.png);
-  background-repeat: no-repeat;
-} */
-
-/* .cards {
-  width: 68px;
-  height: 22px;
-} */
-
 .card {
   width: 23px;
   height: 23px;
-  /* background-image: url(../../img/twitter.png);
-  background-repeat: no-repeat; */
 }
 
 .card:not(:last-child) {
@@ -115,13 +76,11 @@
 }
 
 @media (max-width: 991px) {
-  .footerMenuItem {
-    margin-right: 20px !important;
-  }
   .footerMenuItem:not(:first-child) {
-    margin-top: 10px;
+    margin-top: 10px !important;
+    /* margin-right: 20px !important; */
   }
-  /* .footerMenuItem:not(:first-child) {
-    margin-top: 10px;
-  } */
+  .footerMenuItem {
+    margin-right: 0 !important;
+  }
 }

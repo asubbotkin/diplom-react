@@ -19,22 +19,25 @@ function Footer() {
         <Row
           className="align-items-start
           justify-content-center
+          justify-content-sm-around
           flex-column
           flex-sm-row
           ">
-          <Col className="col-12 justify-content-center col-sm-6 justify-content-sm-start col-md-4 col-lg-3">
-            <NavLink to="." end>
-              <img src={logo} alt="Logo" />
-            </NavLink>
+          <Col className="col-12 justify-content-center col-sm-4 justify-content-sm-start col-lg-3">
             <ul className="text-center text-sm-start">
+              <li className="mb-3 mb-md-4">
+                <NavLink to="." end>
+                  <img className="mx-auto mx-sm-0" src={logo} alt="Logo" />
+                </NavLink>
+              </li>
               <li className={styles.policyItem}>© Все права защищены</li>
               <li className={styles.policyItem}>Политика конфиденциальности</li>
               <li className={styles.policyItem}>Публичная оферта</li>
             </ul>
           </Col>
-          <Col className="col-12 mt-xs-4 mr-xs-0 col-sm-6 col-sm text-md-left col-lg-6 offset-lg-1">
+          <Col className="col-12 mt-4 mt-sm-0 mr-sm-0 col-sm-4 text-center col-lg-6 offset-lg-1">
             <nav>
-              <ul className="d-flex flex-column flex-lg-row text-center text-md-right text-lg-center">
+              <ul className="d-flex flex-column flex-lg-row text-center">
                 <li className={styles.footerMenuItem}>
                   <NavLink className={styles.footerMenuLink} to="." end>
                     Главная
@@ -74,49 +77,48 @@ function Footer() {
               </ul>
             </nav>
           </Col>
-          <Col className="col-12 mt-4 col-md-4 mt-lg-0 col-lg-2">
-            <div className={styles.socialsWrapper}>
+          <Col className="d-flex flex-column mt-4 mt-md-0 text-center text-md-end col-12 col-md-4 mt-lg-0 col-lg-2 ">
+            <a
+              className={styles.rightMenuItem}
+              href="tel:+74958235412"
+              rel="nofollow noopener noreferrer">
+              +7 (495) 823-54-12
+            </a>
+            <a
+              href="/"
+              className={classNames(styles.rightMenuItem, styles.woomail)}
+              rel="nofollow noopener noreferrer">
+              hello@womazing.com
+            </a>
+            <div className="d-flex flex-row my-4 justify-content-center justify-content-md-end">
               <a
-                className={styles.rightMenuItem}
-                href="tel:+74958235412"
-                rel="nofollow noopener noreferrer">
-                +7 (495) 823-54-12
+                href="https://www.instagram.com"
+                className={styles.socialsLink}
+                rel="nofollow noopener noreferrer"
+                target="_blank">
+                <RiInstagramLine className={styles.socialsIcon} />
               </a>
               <a
-                href="/"
-                className={classNames(styles.rightMenuItem, styles.woomail)}
-                rel="nofollow noopener noreferrer">
-                hello@womazing.com
+                className={styles.socialsLink}
+                href="https://www.facebook.com"
+                rel="nofollow noopener noreferrer"
+                target="_blank">
+                <RiFacebookBoxLine className={styles.socialsIcon} />
               </a>
-              <div className={styles.socials}>
-                <a
-                  href="https://www.instagram.com"
-                  className={styles.socialsLink}
-                  rel="nofollow noopener noreferrer"
-                  target="_blank">
-                  <RiInstagramLine className={styles.socialsIcon} />
-                </a>
-                <a
-                  className={styles.socialsLink}
-                  href="https://www.facebook.com"
-                  rel="nofollow noopener noreferrer"
-                  target="_blank">
-                  <RiFacebookBoxLine className={styles.socialsIcon} />
-                </a>
-                <a
-                  className={styles.socialsLink}
-                  href="https://www.twitter.com"
-                  rel="nofollow noopener noreferrer"
-                  target="_blank">
-                  <RiTwitterLine className={styles.socialsIcon} />
-                </a>
-              </div>
-              <div>
-                <RiVisaFill className={styles.card} />
-                <RiMastercardFill className={styles.card} />
-                {/* <img src={cards} alt="" /> */}
-              </div>
+              <a
+                className={styles.socialsLink}
+                href="https://www.twitter.com"
+                rel="nofollow noopener noreferrer"
+                target="_blank">
+                <RiTwitterLine className={styles.socialsIcon} />
+              </a>
             </div>
+            <div>
+              <RiVisaFill className={styles.card} />
+              <RiMastercardFill className={styles.card} />
+              {/* <img src={cards} alt="" /> */}
+            </div>
+            {/* </div> */}
           </Col>
         </Row>
       </div>
