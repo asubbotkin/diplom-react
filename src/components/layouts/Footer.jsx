@@ -35,7 +35,7 @@ function Footer() {
               <li className={styles.policyItem}>Публичная оферта</li>
             </ul>
           </Col>
-          <Col className="col-12 mt-4 mt-sm-0 mr-sm-0 col-sm-4 text-center col-lg-6 offset-lg-1">
+          <Col className="col-12 mt-4 mt-sm-0 mr-sm-0 col-sm-2 text-center col-lg-6 offset-lg-1">
             <nav>
               <ul className="d-flex flex-column flex-lg-row text-center">
                 <li className={styles.footerMenuItem}>
