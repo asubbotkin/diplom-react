@@ -47,7 +47,7 @@ function Footer() {
                   <NavLink className={styles.footerMenuLink} to="shop">
                     Магазин
                   </NavLink>
-                  <div className="d-none d-lg-block">
+                  <div className="d-none d-lg-block text-start">
                     <ul className={styles.products}>
                       <li>
                         <a href="/">Пальто</a>

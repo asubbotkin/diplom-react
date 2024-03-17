@@ -63,8 +63,6 @@
 
 .sliderWrapper {
   max-width: 729px;
-  height: 100px;
-  background-color: #b7239e;
   box-sizing: border-box;
   position: relative;
 }
@@ -75,7 +73,7 @@
   display: none;
 }
 
-.slide.active {
+.slideActive {
   display: block;
 }
 
@@ -84,12 +82,12 @@
   height: 100%;
 }
 
-.btnPrev,
-.btnNext {
+.sliderBtn {
   display: block;
   border: none;
   position: absolute;
   top: 0;
+  background-color: red;
   height: 100%;
   width: 50px;
   opacity: 0.4;
@@ -97,20 +95,21 @@
   transition: all 0.4s ease-in-out;
 }
 
-.btnPrev:hover,
-.btnNext:hover {
+.sliderBtn:hover {
   opacity: 1;
 }
 
-.btnNext {
+.sliderBtnNext {
   background: url(../../img/next.png) no-repeat center center;
   right: 0;
   left: auto;
   transform: translate(100%, 0%);
 }
 
-.btnPrev {
+.sliderBtnPrev {
   background: url(../../img/prev.png) no-repeat center center;
+  /* left: 0;
+  right: auto; */
   transform: translate(-100%, 0%);
 }
 
@@ -123,10 +122,6 @@
   left: 40%;
 }
 
-.dot.active {
-  background-color: #fff;
-}
-
 .dot {
   width: 30px;
   height: 4px;
@@ -135,6 +130,20 @@
   cursor: pointer;
 }
 
+.dotActive {
+  background-color: #fff;
+}
+
 .dot:not(:last-child) {
   margin-right: 12px;
+}
+
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
 }
