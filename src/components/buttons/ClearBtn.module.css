@@ -1,0 +1,49 @@
+.clearBtn {
+  width: 243px;
+  height: 68px;
+  padding: 22px 0;
+  color: #6e9c9f;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 65px;
+  border: 1px solid #6e9c9f;
+  border-radius: 5px;
+  background: none;
+  position: relative;
+  transition: color 0.5s linear;
+  overflow: hidden;
+}
+
+.clearBtn::before {
+  border: 1px solid transparent;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 101%;
+  background: #6e9c9f;
+  color: #fff !important;
+  z-index: 1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transform: scaleY(0);
+}
+
+.clearBtn:focus {
+  box-shadow: none;
+}
+
+.clearBtn:hover {
+  color: #fff;
+}
+
+.clearBtnLink {
+  color: #6e9c9f;
+}
+
+.clearBtn:hover::before {
+  transform: scaleY(1);
+  z-index: -1;
+}

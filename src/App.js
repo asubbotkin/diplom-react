@@ -5,6 +5,7 @@ import Shop from './components/shop/Shop';
 import About from './components/about/About';
 import Contacts from './components/contacts/Contacts';
 import Chart from './components/chart/Cart';
+import Item from './components/item/Item';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />
             <Route path="chart" element={<Chart />} />
+            <Route path="item" element={<Item />} />
             {/* <Route path="*" element={<NotFound />} /> */}
           </Route>
         </Routes>

@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 
 function Importances() {
   return (
-    <div className="p130">
+    <div className={styles.pt130}>
       <div class="container">
         <Row class="row">
           <Col className="col-12 text-center text-xl-start">

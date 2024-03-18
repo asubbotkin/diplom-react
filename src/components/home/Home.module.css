@@ -1,4 +1,4 @@
-/*   Team  section styles  */
+/*  Common styles for sections  */
 
 .pt127 {
   padding-top: 127px;
@@ -22,6 +22,90 @@
 
 .title {
   margin-bottom: 92px;
+}
+
+.shopLink {
+}
+
+/*   Collection section styles  */
+
+.collectionItem {
+  display: block;
+  text-align: center;
+}
+
+.collectionItemImg {
+  max-width: 350px;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.collectionItemImg::before {
+  content: '';
+  background: rgba(110, 156, 159, 0.64);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-out 0s;
+}
+
+.collectionItemLink {
+  content: '';
+  width: 32px;
+  height: 24px;
+  position: absolute;
+  background-image: url(../../img/arrow-right1.png);
+  cursor: pointer;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.collectionItemImg:hover .collectionItemProduct {
+  opacity: 0.4;
+}
+
+.collectionItemImg:hover::before {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.9s ease;
+}
+
+.collectionItemImg:hover .collectionItemLink {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.collectionItemName {
+  margin-top: 24px;
+  margin-bottom: 7px;
+}
+
+.collectionItemPrice {
+  color: #998e78;
+}
+
+.collectionItemPriceWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.collectionItemOldprice {
+  margin-right: 10px;
+  color: #998e78;
+  text-decoration: line-through;
+}
+
+.collectionBtn {
+  margin-top: 65px;
 }
 
 /*   Importances section styles  */
