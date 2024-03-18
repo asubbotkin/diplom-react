@@ -7,14 +7,14 @@ function Importances() {
     <div className="p130">
       <div class="container">
         <Row class="row">
-          <Col className="col-12 text-center text-lg-start">
+          <Col className="col-12 text-center text-xl-start">
             <h2 className={classNames(styles.title, styles.importansesTitle)}>
               Что для нас важно
             </h2>
           </Col>
         </Row>
-        <Row className="d-flex justify-content-md-center">
-          <Col className="col-12 col-md-6 justify-content-center justify-content-lg-start col-xl-4 d-flex">
+        <Row className="">
+          <Col className="col-12 col-md-6 justify-content-center justify-content-xl-start col-xl-4 d-flex">
             <div class="importancesItem">
               <div
                 className={classNames(
@@ -40,7 +40,7 @@ function Importances() {
               </p>
             </div>
           </Col>
-          <Col className="col-12 col-md-6 justify-content-center justify-content-lg-start col-xl-4 d-flex">
+          <Col className="col-12 mt-4 mt-md-0 col-md-6 justify-content-center justify-content-lg-start col-xl-4 d-flex">
             <div class="importancesItem">
               <div
                 className={classNames(
@@ -66,7 +66,7 @@ function Importances() {
               </p>
             </div>
           </Col>
-          <Col className="col-12 col-md-6 justify-content-center justify-content-lg-start col-xl-4 d-flex">
+          <Col className="col-12 offset-md-3 offset-xl-0  col-md-6 mt-4 mt-xl-0 justify-content-center justify-content-lg-start col-xl-4 d-flex">
             <div class="importancesItem">
               <div
                 className={classNames(
@@ -92,8 +92,6 @@ function Importances() {
               </p>
             </div>
           </Col>
-          <Col className="col-12 mt-5 col-md-6 mt-md-0 justify-content-center justify-content-lg-start col-xl-4 d-flex"></Col>
-          <Col className="col-12 mt-5 col-md-6 justify-content-center justify-content-lg-start mt-lg-0 col-xl-4 d-flex"></Col>
         </Row>
       </div>
     </div>

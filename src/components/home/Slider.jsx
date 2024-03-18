@@ -4,7 +4,11 @@
 // import styles from './Home.module.css';
 
 function Slider() {
-  return <h1>Slider</h1>;
+  return (
+    <div className="container">
+      <h1>Slider</h1>
+    </div>
+  );
 }
 
 export default Slider;
